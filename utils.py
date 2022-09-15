@@ -16,16 +16,18 @@ def microfones():
     print(sr.Microphone().list_microphone_names())  # Lista de microfones disponíveis conectados ao computador.
 
 
-def escutar():
+def escutar(lingua="pt-BR", micro=1):
     """
     Esta função capta e transforma em texto o áudio do microfone
+    :param lingua: str
+    :param micro: int
     :return: str
     """
-    with sr.Microphone(1) as mic:
+    with sr.Microphone(micro) as mic:
         rec.adjust_for_ambient_noise(mic)
-        print("You may start / Pode começar a falar.")
+        print("Next line.")
         audio = rec.listen(mic)
-        texto = rec.recognize_google(audio, language="pt-BR")
+        texto = rec.recognize_google(audio, language=lingua)
     return texto
 
 
