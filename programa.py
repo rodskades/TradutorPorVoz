@@ -2,8 +2,8 @@
 Programa principal de tradução.
 """
 
-from speech_to_text import escutar, microfones
-from tradutor import traduzir
+from utils.speech_to_text import escutar, microfones
+from utils.tradutor import traduzir
 
 print("List of microfones that can be used: ")
 microfones()
