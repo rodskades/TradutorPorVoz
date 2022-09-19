@@ -12,7 +12,12 @@ language_original = input("Inform the language of origin (en, pt, ja, etc...): "
 language_dest = input("Inform the language to translate to: ")
 
 
-while True:
+def main():
     text = escutar(lingua=language_original, micro=mic)
     translated = traduzir(text, de=language_original, para=language_dest)
     print(translated)
+    main()
+
+
+if __name__ == "__main__":
+    main()
