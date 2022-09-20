@@ -23,11 +23,14 @@ def escutar(lingua="pt-BR", micro=1):
     :param micro: int
     :return: str
     """
-    with sr.Microphone(micro) as mic:
-        rec.adjust_for_ambient_noise(mic)
-        print("Next line.")
-        audio = rec.listen(mic)
-        texto = rec.recognize_google(audio, language=lingua)
+    try:
+        with sr.Microphone(micro) as mic:
+            rec.adjust_for_ambient_noise(mic)
+            print("Next line.")
+            audio = rec.listen(mic)
+            texto = rec.recognize_google(audio, language=lingua)
+    except sr.UnknownValueError:
+        escutar()
     return texto
 
 
