@@ -27,7 +27,9 @@ def microfones():
     Na instância sr.Microphone(x), x deve ser o número na lista do microfone desejado de se usar.
     :return: print
     """
-    print(sr.Microphone().list_microphone_names())  # Lista de microfones disponíveis conectados ao computador.
+    lista = sr.Microphone().list_microphone_names()  # Lista de microfones disponíveis conectados ao computador.
+    for i in range(len(lista)):
+        print(f"{i}: {lista[i]}")
 
 
 def escutar(lingua="pt-BR", micro=1):
