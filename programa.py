@@ -1,5 +1,19 @@
+# This Python file uses the following encoding: utf-8
+
+# -------------------- #
+#    Documentation     #
+# -------------------- #
+
 """
-Programa principal de tradução.
+NOME:
+    programa.py
+
+DESCRIÇÃO:
+    Programa que irá captar a voz a partir do microfone escolhido, traduzir para o idioma de escolha e finalmente
+    apresentar o resultado na forma de uma legenda.
+
+AUTOR:
+    R. K. O. Silva, <rodolpho_kades@hotmail.com>
 """
 
 from utils.speech_to_text import escutar, microfones

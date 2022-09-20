@@ -1,5 +1,19 @@
+# This Python file uses the following encoding: utf-8
+
+# -------------------- #
+#    Documentation     #
+# -------------------- #
+
 """
-Módulo para lidar com o Google Translate.
+NOME:
+    utils.tradutor.py
+
+DESCRIÇÃO:
+    Módulo para lidar com o Google Translate a partir de um texto recebido.
+
+AUTOR:
+    R. K. O. Silva, <rodolpho_kades@hotmail.com>
+
 """
 
 from googletrans import Translator

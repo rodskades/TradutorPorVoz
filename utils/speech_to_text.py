@@ -1,5 +1,19 @@
+# This Python file uses the following encoding: utf-8
+
+# -------------------- #
+#    Documentation     #
+# -------------------- #
+
 """
-Módulo para reconhecimento de fala.
+NOME:
+    utils.speech_to_text.py
+
+DESCRIÇÃO:
+    Módulo para reconhecimento de fala com a biblioteca speech_recognition.
+
+AUTOR:
+    R. K. O. Silva, <rodolpho_kades@hotmail.com>
+
 """
 
 import speech_recognition as sr

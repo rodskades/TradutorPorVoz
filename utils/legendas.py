@@ -1,5 +1,21 @@
 # This Python file uses the following encoding: utf-8
 
+# -------------------- #
+#    Documentation     #
+# -------------------- #
+
+"""
+NOME:
+    utils.legendas.py
+
+DESCRIÇÃO:
+    Módulo para organizar a legenda a partir de um texto recebido.
+
+AUTOR:
+    R. K. O. Silva, <rodolpho_kades@hotmail.com>
+
+"""
+
 
 def subtitle(label, text, h=700):
     label.config(text=text)
