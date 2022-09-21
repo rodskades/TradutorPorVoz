@@ -42,6 +42,13 @@ programas e a legenda sempre estará visível.
 Contudo, deve-se evitar frases muito longas uma vez que atualmente as 
 legendas estão limitadas a 4 linhas para evitar bugs.
 
+#### Estrutura do projeto:
+    -> utils:
+        - legendas.py
+        - speech_to_text.py
+        - tradutor.py
+    -> programa.py
+    -> README.md
 
 ------------------------------
 Contato:
