@@ -46,7 +46,7 @@ def escutar(lingua="pt-BR", micro=1):
             audio = rec.listen(mic)
             texto = rec.recognize_google(audio, language=lingua)
     except sr.UnknownValueError:
-        escutar()
+        texto = escutar()
     return texto
 
 
