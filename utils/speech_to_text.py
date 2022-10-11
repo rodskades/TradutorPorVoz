@@ -41,7 +41,7 @@ def escutar(lingua="pt-BR", micro=1):
     """
     try:
         with sr.Microphone(micro) as mic:
-            rec.adjust_for_ambient_noise(mic)
+            rec.adjust_for_ambient_noise(mic, duration=0.5)
             print("Next line.")
             audio = rec.listen(mic)
             texto = rec.recognize_google(audio, language=lingua)

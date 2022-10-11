@@ -33,7 +33,6 @@ label = tk.Label(text="", font=('Consolas', '30'), fg='DarkOrange2', bg='black')
 
 def main():
     text = escutar(lingua=language_original, micro=mic)
-    # print(text)
     traduzido = traduzir(text, de=language_original, para=language_dest)
     if len(traduzido) > 30:
         tmp1 = traduzido.split()
